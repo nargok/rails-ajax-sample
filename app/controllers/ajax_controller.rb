@@ -13,6 +13,7 @@ class AjaxController < ApplicationController
   end
 
   def result
+    sleep(2)
     # 選択ボックスで指定された出版社でbooksテーブルを検索
     @books = Book.where(publish: params[:publish])
   end
