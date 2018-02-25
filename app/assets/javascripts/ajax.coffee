@@ -4,7 +4,6 @@
 
 
 $(document).on 'turbolinks:load', ->
-  # TODO 処理中メッセージが出す方法を探す
   $('#ajax_form').on 'ajax:send', ->
     console.log('starting..')
     $('#progress').html '通信中...'
